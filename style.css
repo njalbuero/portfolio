@@ -1,210 +1,197 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Dosis', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+
+  color: #fff;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* globals */
+.primary-color {
+  color: #ffc400 !important;
+}
 
 /* nav */
 
 .navbar {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #F6F6F6;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
 }
 
 .brand-title {
-    font-family: monospace;
-    font-size: 1.5rem;
-    margin: .5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem;
 }
 
 .brand-title a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+}
+
+.brand-title a:hover {
 }
 
 .navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .navbar-links li {
-    list-style: none;
+  list-style: none;
+  transition: 0.2s;
 }
 
 .navbar-links li a {
-    text-decoration: none;
-    color: #000;
-    padding: 1rem;
-    display: block;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  color: #fff;
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+  background-color: rgba(1, 1, 1, 0.2);
+  border-radius: 5px;
 }
-
-.navbar-links li a:hover {
-    color: #fff;
-}
-
 
 /* nav end */
-
-
-/* sections */
-
-#section1 {
-    min-height: 92vh;
-    background: #F6F6F6;
-    display: inline-block;
-    width: 100%;
-}
-
-#section2 {
-    min-height: 100vh;
-    background: #203748;
-    color: #fff;
-    display: inline-block;
-    width: 100%;
-}
-
-#section3 {
-    min-height: 100vh;
-    background: #F6F6F6;
-    display: inline-block;
-    width: 100%;
-}
-
-#section1 div {
-    margin: 0 2em;
-}
-
-h1 {
-    margin-top: 3em;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-p,
-h2,
-.skills {
-    text-align: center;
-}
-
-#section1 div p {
-    font-size: 25px;
-}
-
-h2 {
-    margin-top: 5em;
-}
-
-.skills i {
-    font-size: 50px;
-    padding: 25px 15px;
-    line-height: 1.5em;
-}
-
-.portfolio-container {
-    padding-bottom: 1em;
-    text-align: center;
-}
-
-.portfolio-container a img {
-    max-width: 100%;
-    padding: 1em;
-}
-
-.contact-details {
-    padding-top: 3em;
-    text-align: center;
-}
-
-.contact-list {
-    display: inline-block;
-    text-align: left;
-    padding-bottom: 1em;
-    font-size: 20px;
-}
-
-.contact-links i {
-    border-bottom: none;
-    font-size: 50px;
-    padding: 25px 15px;
-    line-height: 1.5em;
-    color: black;
-}
-
-.contact-links a {
-    text-decoration: none;
-}
-
-
-/* sections end */
-
 
 /* navbar toggle */
 
 .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
 .toggle-button .bar {
-    height: 3px;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
     width: 100%;
-    background-color: #000;
-    border-radius: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  .portfolio-container a img {
+    margin-bottom: 1em;
+  }
 }
-
-@media(max-width: 768px) {
-    .toggle-button {
-        display: flex;
-    }
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar-links ul {
-        flex-direction: column;
-        width: 100%;
-    }
-    .navbar-links li {
-        text-align: center;
-    }
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-    .navbar-links.active {
-        display: flex;
-    }
-    .portfolio-container a img {
-        margin-bottom: 1em;
-    }
-}
-
 
 /* end navbar toggle */
+
+/* sections */
+.section {
+  display: inline-block;
+  width: 100%;
+}
+#top {
+  padding: 5em 2em;
+  min-height: 92vh;
+}
+
+#portfolio {
+  padding: 3em 2em;
+  min-height: 100vh;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact {
+  padding: 3em 2em;
+  min-height: 100vh;
+  display: inline-block;
+  width: 100%;
+}
+
+/* sections end */
+
+/* about */
+.about-content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-content-container h1 {
+  margin: 0;
+  line-height: 1em;
+  font-size: 4rem;
+}
+.skills-container {
+  display: flex;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+.skill {
+  margin: 0.5em;
+  background-color: rgba(1, 1, 1, 0.2);
+  padding: 0.5em 0.8em;
+  border-radius: 5px;
+  transition: 1s;
+}
+.skill:hover {
+  background-color: rgba(1, 1, 1, 0.5);
+  color: #ffc400;
+}
+.about-content-container a {
+  margin-top: 5em;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(1, 1, 1, 0.5);
+  padding: 0.5em 0.8em;
+  font-size: 1.5rem;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+.about-content-container a:hover {
+  background-color: #F0A30A;
+  border-radius: 20px;
+}
+.about-content-container i {
+  font-weight: 200;
+}
