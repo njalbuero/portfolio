@@ -30,27 +30,27 @@
   <body>
     <a id="about"></a>
     <nav class="navbar">
-      <a href="#" class="toggle-button">
+      <a href="#xd" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </a>
       <div class="brand-title">
-        <a href="index.html"></a><strong class="primary-color ">@njalbuero</strong></a>
+        <a href="index.html"><strong>@njalbuero</strong></a>
       </div>
       <div class="navbar-links">
         <ul>
           <li><a class="navLink" href="#about">ABOUT</a></li>
-          <li><a class="navLink" href="#portfolio">PROJECTS</a></li>
+          <li><a class="navLink" href="#projects">PROJECTS</a></li>
           <li><a class="navLink" href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </nav>
 
-    <div id="top" class="section">
+    <div id="about_section" class="section">
       <div class="about-content-container">
         <h1>
-          Hello, I'm <span class="primary-color ">Nhielsan Albuero</span>.
+          Hello, I'm <span class="primary-color">Nhielsan Albuero</span>.
           <br />
           I'm a web developer.
         </h1>
@@ -65,20 +65,91 @@
           <div class="skill">LARAVEL</div>
           <div class="skill">REACT</div>
         </div>
-        <a href="#portfolio"
-          ><i class="far fa-heart"></i>
-          &nbsp<strong>View my work</strong>
+        <a href="#projects"
+          ><i class="fas fa-arrow-down"></i> &nbsp<strong>View my work</strong>
         </a>
       </div>
     </div>
-    <div id="portfolio" class="section">
-      <div class="portfolio-container"></div>
+    <div id="projects" class="section">
+      <h1>PROJECTS</h1>
+      <div class="projects-container">
+        <div class="project-container">
+          <img
+            src="img/javascript_calculator.png"
+            alt="javascript_calculator"
+          />
+          <div class="overlay">
+            <div class="text">
+              <p>A calculator made with javascript.</p>
+              View on
+              <a href="https://codepen.io/saixzxc/pen/GOVRzx" target="_blank"
+                >CodePen</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="img/local_weather.png" alt="local_weather" />
+          <div class="overlay">
+            <div class="text">
+              <p>
+                This shows the current local weather using the OpenWeatherMap
+                API.
+              </p>
+              View on
+              <a href="https://codepen.io/saixzxc/pen/mMqBQV" target="_blank"
+                >CodePen</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="img/random_quotes.png" alt="random_quotes" />
+          <div class="overlay">
+            <div class="text">
+              <p>This generates random quotes from the Quotable API.</p>
+              View on
+              <a href="https://codepen.io/saixzxc/pen/VMyYbN" target="_blank"
+                >CodePen</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="img/wikipedia_search.png" alt="wikipedia_search" />
+          <div class="overlay">
+            <div class="text">
+              <p>This queries Wikipedia entries using the site's API.</p>
+              View on
+              <a href="https://codepen.io/saixzxc/pen/aLKoYK" target="_blank"
+                >CodePen</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="img/portfolio.png" alt="soon" />
+          <div class="overlay">
+            <div class="text">
+              <p>The site you are on right now, made with native CSS.</p>
+              View on
+              <a href="https://github.com/njalbuero/portfolio" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="img/soon.png" alt="soon" />
+        </div>
+      </div>
     </div>
     <div id="contact" class="section">
-      <div class="contact-details">
+      <div class="contact-content-container">
+        <h1>Contact Me</h1>
         <div class="contact-list">
-          <p>Email: njalbuero@gmail.com</p>
-          <p>Mobile: 09156435065</p>
+          <p><i class="fas fa-envelope faw"></i> &nbsp njalbuero@gmail.com</p>
+          <p><i class="fas fa-phone-alt faw"></i> &nbsp 09156435065</p>
         </div>
         <div class="contact-links">
           <a target="_blank" href="https://github.com/njalbuero"
@@ -94,6 +165,14 @@
           ></a>
         </div>
       </div>
+      <footer>
+        <p>
+          Made with <i class="fas fa-heart"></i> by
+          <a target="_blank" href="https://github.com/njalbuero">
+            Nhielsan Albuero</a
+          >
+        </p>
+      </footer>
     </div>
 
     <script src="script.js"></script>
