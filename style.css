@@ -135,7 +135,7 @@ body {
   margin-top: 5em;
   text-decoration: none;
   color: #fff;
-  background-color: #f0a30a;
+  background-color: #FF8F00;
   padding: 0.5em 0.8em;
   font-size: 1.5rem;
   transition: 0.2s;
@@ -159,7 +159,7 @@ body {
 }
 .skill:hover {
   background-color: rgba(1, 1, 1, 0.5);
-  color: #ffc400;
+  color: #FF8F00;
 }
 @media (max-width: 768px) {
   #about_section {
@@ -181,7 +181,7 @@ body {
   min-height: 100vh;
   display: inline-block;
   width: 100%;
-  background: linear-gradient(#f0a30a 25%, rgba(0, 0, 0, 0) 0);
+  background: linear-gradient(#FF8F00 25%, rgba(0, 0, 0, 0) 0);
   border-bottom: 1px solid #fff;
  
 }
@@ -218,7 +218,7 @@ body {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #f0a30a;
+  background-color: #0093e9;
   border-radius: 15px;
 }
 .overlay a {
